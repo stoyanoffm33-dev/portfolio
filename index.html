@@ -1,0 +1,941 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio of a Creative Developer specializing in modern web solutions, UI/UX design, and full-stack development. View my projects and skills.">
+    <meta name="keywords" content="Portfolio, Web Developer, UI/UX, JavaScript, HTML, CSS, Projects, Resume">
+    <meta name="author" content="Mario Stoyanov">
+    <meta property="og:title" content="Mario Stoyanov - SEO Specialist & Web Developer">
+    <meta property="og:description"
+        content="Portfolio of Mario Stoyanov. Turning websites into revenue engines with SEO, design, and performance.">
+    <meta property="og:type" content="website">
+
+    <title>Mario Stoyanov | SEO Specialist & Web Developer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;700;800&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons (using CDN for simplicity) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="cursor-glow"></div>
+
+    <header class="glass-header">
+        <nav>
+            <div class="logo">
+                <a href="#hero">Portfolio.<span class="highlight">io</span></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </div>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <canvas id="shader-canvas"></canvas>
+            <div class="hero-container">
+                <div class="hero-content">
+                    <span class="greeting">Hello, I'm</span>
+                    <h1 class="hero-name">Mario Stoyanov</h1>
+                    <h2 class="hero-title">Turning your website into a <span class="gradient-text">reliable revenue
+                            engine</span>.</h2>
+                    <p class="hero-desc">
+                        I specialize in driving massive organic traffic and revenue through expert SEO. I also build
+                        beautiful, high-converting websites and landing pages to ensure your new visitors turn into
+                        paying
+                        clients.
+                    </p>
+                    <div class="cta-group">
+                        <a href="#projects" class="btn primary-btn">View Work</a>
+                        <a href="https://www.upwork.com/freelancers/~015316ba259b89636e" target="_blank"
+                            class="btn secondary-btn">Contact Me</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <!-- Abstract 3D-like shape or illustration -->
+                    <div class="profile-image-container">
+                        <img src="assets/myself.webp" alt="Mario Stoyanov" class="profile-image">
+                        <div class="card-float seo-card">
+                            <i class="fas fa-search-dollar"></i>
+                            <span>SEO Expert</span>
+                        </div>
+                        <div class="card-float dev-card">
+                            <i class="fas fa-code"></i>
+                            <span>Web Dev</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h3>About Me</h3>
+                    <div class="line"></div>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            I help businesses grow by <strong>turning their websites into reliable revenue
+                                engines</strong>. Over the last five years, I’ve partnered with global brands across six
+                            continents to <strong>drive over 1 million online visitors</strong> and <strong>generate
+                                more than $100 million in revenue</strong>. I don't just focus on technical charts or
+                            jargon; I focus on getting your business seen by the right people and <strong>turning those
+                                clicks into paying customers</strong>.
+                        </p>
+                        <p>
+                            I back up these results with over a dozen certifications and thousands of hours dedicated to
+                            mastering the latest digital trends. I handle the complex technical details so you don't
+                            have to, <strong>ensuring your business stays ahead of the curve</strong>. My goal is
+                            simple: to be <strong>the last partner you ever need to hire</strong> to handle your digital
+                            growth.
+                        </p>
+
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <span class="stat-number">5+</span>
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">50+</span>
+                                <span class="stat-label">Projects Completed</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">Client Satisfaction</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">1M+</span>
+                                <span class="stat-label">Online Visitors</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">$100M+</span>
+                                <span class="stat-label">Revenue Generated</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="entropy-section" class="section">
+            <div class="container" style="text-align: center;">
+                <h3 class="entropy-caption">My transparent work process connects the dots and makes order out of chaos.
+                </h3>
+                <div id="entropy-container">
+                    <canvas id="entropy-canvas"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h3>My Skills</h3>
+                    <p>Technologies and tools I use to create.</p>
+                </div>
+
+                <div class="skills-wrapper">
+                    <!-- Column 1: Search & Visibility -->
+                    <div class="skill-category">
+                        <h4>Search & Visibility</h4>
+                        <div class="skill-tags">
+                            <span class="tag"><i class="fas fa-trophy"></i> Google Ranking</span>
+                            <span class="tag"><i class="fas fa-map-marker-alt"></i> Local Leads</span>
+                            <span class="tag"><i class="fas fa-chart-bar"></i> Visitor Insights</span>
+                            <span class="tag"><i class="fas fa-chart-line"></i> Growth Data</span>
+                            <span class="tag"><i class="fas fa-key"></i> Buyer Keywords</span>
+                            <span class="tag"><i class="fas fa-crown"></i> Brand Authority</span>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Performance Tech -->
+                    <div class="skill-category">
+                        <h4>Performance Tech</h4>
+                        <div class="skill-tags">
+                            <span class="tag"><i class="fas fa-code"></i> Modern Code</span>
+                            <span class="tag"><i class="fas fa-tasks"></i> Easy Management</span>
+                            <span class="tag"><i class="fas fa-bolt"></i> Instant Loading</span>
+                            <span class="tag"><i class="fas fa-mobile-alt"></i> Mobile Perfect</span>
+                        </div>
+                    </div>
+
+                    <!-- Column 3: Design & Sales -->
+                    <div class="skill-category">
+                        <h4>Design & Sales</h4>
+                        <div class="skill-tags">
+                            <span class="tag"><i class="fas fa-palette"></i> Modern Brand Look</span>
+                            <span class="tag"><i class="fas fa-file-invoice-dollar"></i> High-Sales Pages</span>
+                            <span class="tag"><i class="fas fa-percentage"></i> Better Conversions</span>
+                            <span class="tag"><i class="fas fa-wind"></i> Easy User Flow</span>
+                        </div>
+                    </div>
+
+                    <!-- Column 4: Smart Automations -->
+                    <div class="skill-category">
+                        <h4>Smart Automations</h4>
+                        <div class="skill-tags">
+                            <span class="tag"><i class="fas fa-robot"></i> Automated Sales Flows</span>
+                            <span class="tag"><i class="fas fa-clock"></i> Time-Saving Systems</span>
+                            <span class="tag"><i class="fas fa-magnet"></i> Instant Lead Capture</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h3>Featured Projects</h3>
+                    <p>A selection of my recent work.</p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Hooters -->
+                    <article class="project-card">
+                        <a href="https://www.hooters.com/" target="_blank" class="card-banner-link">
+                            <div class="card-banner">
+                                <img src="https://www.hooters.com/perch/resources/site_logos/hoalogoshootiesite10-2024.svg"
+                                    alt="Hooters Logo" class="project-logo">
+                            </div>
+                        </a>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h4><a href="https://www.hooters.com/" target="_blank">Hooters</a></h4>
+                            </div>
+                            <p class="project-desc">I dominated local search results for multiple locations to ensure
+                                the brand stays at the top of mind for hungry customers.</p>
+                            <ul class="project-stats">
+                                <li>📈 2.6x Increase in citation sources</li>
+                                <li>🛠️ Fixed and verified all incorrect business citations</li>
+                                <li>🥇 Ranked #1 for "restaurants near me" in multiple areas</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Roto-Rooter -->
+                    <article class="project-card">
+                        <a href="https://www.rotorooter.com/" target="_blank" class="card-banner-link">
+                            <div class="card-banner">
+                                <img src="https://cdn.rotorootercdn.com/images/images/graph-tags/rr_logo_square.png"
+                                    alt="Roto-Rooter Logo" class="project-logo">
+                            </div>
+                        </a>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h4><a href="https://www.rotorooter.com/" target="_blank">Roto-Rooter Plumbing & Water
+                                        Cleanup</a></h4>
+                            </div>
+                            <p class="project-desc">I rebuilt their local presence to turn casual searches into
+                                high-value emergency service calls without relying on paid ads.</p>
+                            <ul class="project-stats">
+                                <li>⭐️ Gained 400+ 5-star reviews across multiple platforms</li>
+                                <li>📞 +340% increase in direct calls and visits</li>
+                                <li>🥇 Ranked #1 for "plumbers near me" across key locations</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Discount Dumpster -->
+                    <article class="project-card">
+                        <a href="https://discountdumpsterco.com/" target="_blank" class="card-banner-link">
+                            <div class="card-banner">
+                                <img src="assets/discount_dumpster.webp" alt="Discount Dumpster Logo"
+                                    class="project-logo">
+                            </div>
+                        </a>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h4><a href="https://discountdumpsterco.com/" target="_blank">Discount Dumpster</a></h4>
+                            </div>
+                            <p class="project-desc">I optimized their map presence to capture the local market and build
+                                a five-star digital reputation.</p>
+                            <ul class="project-stats">
+                                <li>📲 +250 Click-to-calls directly from Google Business Profile</li>
+                                <li>👀 +600 New views on their Business Profile</li>
+                                <li>🖱️ +180 Website clicks driven by Google Business Profile</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Ultimate Citizenship -->
+                    <article class="project-card">
+                        <a href="https://www.ultimatecitizenship.com/" target="_blank" class="card-banner-link">
+                            <div class="card-banner">
+                                <img src="assets/ultimate_citizenship_logo.webp" alt="Ultimate Citizenship Logo"
+                                    class="project-logo">
+                            </div>
+                        </a>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h4><a href="https://www.ultimatecitizenship.com/" target="_blank">Ultimate
+                                        Citizenship</a></h4>
+                            </div>
+                            <p class="project-desc">I transformed a basic site into a streamlined sales engine that
+                                handles high-ticket clients with ease.</p>
+                            <ul class="project-stats">
+                                <li>📊 +10% CTR increase through better site navigation</li>
+                                <li>⏳ +25% Longer time spent on page via content strategy</li>
+                                <li>🏆 Top 3 rankings for keywords in a competitive niche</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Fortune Panda -->
+                    <article class="project-card">
+                        <a href="https://fortunepanda.biz/" target="_blank" class="card-banner-link">
+                            <div class="card-banner">
+                                <img src="assets/fortune_panda_logo.webp" alt="Fortune Panda Casino Logo"
+                                    class="project-logo">
+                            </div>
+                        </a>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h4><a href="https://fortunepanda.biz/" target="_blank">Fortune Panda Casino</a></h4>
+                            </div>
+                            <p class="project-desc">I executed a full digital takeover, managing a complex site
+                                migration while massively increasing brand popularity.</p>
+                            <ul class="project-stats">
+                                <li>🚀 5x Increase in total website clicks</li>
+                                <li>📈 +350k Impressions and +17k clicks in just 4 months</li>
+                                <li>🔥 Major boost in brand popularity on Google Trends</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Max1 Hosting -->
+                    <article class="project-card">
+                        <a href="https://max1.bg/" target="_blank" class="card-banner-link">
+                            <div class="card-banner">
+                                <img src="https://blog.max1.bg/wp-content/uploads/2025/07/cropped-cropped-Logo_Max1.png"
+                                    alt="Max1 Hosting Logo" class="project-logo">
+                            </div>
+                        </a>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h4><a href="https://max1.bg/" target="_blank">Max1 Hosting</a></h4>
+                            </div>
+                            <p class="project-desc">I engineered a strategy to build authority through high-quality
+                                backlinks and a full technical redesign.</p>
+                            <ul class="project-stats">
+                                <li>🌟 Hundreds of new clients gained through organic search</li>
+                                <li>📈 +200% Impressions and +80% click growth</li>
+                                <li>🏗️ Complete redesign matched with a winning content strategy</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Motorhomes and Caravans Saxony -->
+                    <article class="project-card">
+                        <a href="https://wohnmobilcenter-sachsen.de/" target="_blank" class="card-banner-link">
+                            <div class="card-banner">
+                                <img src="assets/motorhomes_and_caravans_saxony_logo.webp"
+                                    alt="Motorhomes and Caravans Saxony Logo" class="project-logo">
+                            </div>
+                        </a>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h4><a href="https://wohnmobilcenter-sachsen.de/" target="_blank">Motorhomes and
+                                        Caravans Saxony</a></h4>
+                            </div>
+                            <p class="project-desc">I drove a massive traffic surge by smoothing out technical glitches
+                                and targeting exactly what buyers are looking for.</p>
+                            <ul class="project-stats">
+                                <li>🎯 Top 3 Keywords increased from 52 to 121</li>
+                                <li>🚦 Traffic grew from 2.1k to 5.1k monthly organic visitors</li>
+                                <li>🔎 Click increase driven by smart keyword placement</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Challenger Motorhomes -->
+                    <article class="project-card">
+                        <a href="https://challenger-wohnmobile.de/" target="_blank" class="card-banner-link">
+                            <div class="card-banner">
+                                <img src="https://www.autohaus-erdbruegger.de/fileadmin/Wohnmobile/logo-challenger-300-trans-2025.png"
+                                    alt="Challenger Motorhomes Logo" class="project-logo">
+                            </div>
+                        </a>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h4><a href="https://challenger-wohnmobile.de/" target="_blank">Challenger
+                                        Motorhomes</a></h4>
+                            </div>
+                            <p class="project-desc">I reorganized the entire site structure to turn it into a customer
+                                magnet that drives organic growth.</p>
+                            <ul class="project-stats">
+                                <li>⚡ Organic sessions skyrocketed from 1.6k to 7.3k</li>
+                                <li>🧲 Improved navigation to keep visitors engaged longer</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Hillman Hunting Gear -->
+                    <article class="project-card">
+                        <a href="https://hillmangear.com/" target="_blank" class="card-banner-link">
+                            <div class="card-banner">
+                                <img src="https://hillmangear.com/cdn/shop/files/Hillman_logo_home_2020-1_240c07b7-621f-4efc-abe1-fe71336cd635.png?v=1733875375&width=360"
+                                    alt="Hillman Hunting Gear Logo" class="project-logo">
+                            </div>
+                        </a>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h4><a href="https://hillmangear.com/" target="_blank">Hillman Hunting Gear</a></h4>
+                            </div>
+                            <p class="project-desc">I repaired complex technical errors and optimized speed to ensure
+                                shoppers never leave out of frustration.</p>
+                            <ul class="project-stats">
+                                <li>🚀 Page speed score jumped from 41 to 89</li>
+                                <li>💰 +500% Traffic increase to key "money" pages</li>
+                                <li>👥 3x More daily organic visitors</li>
+                                <li>👁️ Views grew from 3k to 13k</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Bear Functional -->
+                    <article class="project-card">
+                        <a href="https://bearfunctional.com/" target="_blank" class="card-banner-link">
+                            <div class="card-banner">
+                                <img src="assets/bear-logo.png" alt="Bear Functional Logo" class="project-logo">
+                            </div>
+                        </a>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h4><a href="https://bearfunctional.com/" target="_blank">Bear Functional</a></h4>
+                            </div>
+                            <p class="project-desc">Developed a mobile-friendly, multilingual website with localized SEO
+                                and an automated booking system to streamline client acquisition.</p>
+                            <ul class="project-stats">
+                                <li>🚀 500+ monthly website visitors</li>
+                                <li>📅 300+ monthly session bookings</li>
+                                <li>🏆 Increased local search visibility and brand authority</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="certifications" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h3>Certifications</h3>
+                    <p>My expertise is backed by industry-recognized certifications.</p>
+                </div>
+                <div class="certifications-grid">
+                    <!-- SEO Related -->
+                    <div class="certification-card">
+                        <img src="assets/seo-fundamentals-thumbnail.webp"
+                            data-full-res="assets/seo-fundamentals-certificate.webp"
+                            alt="SEO Fundamentals Certification" class="cert-image">
+                        <h5 class="cert-title">SEO Fundamentals</h5>
+                    </div>
+                    <div class="certification-card">
+                        <img src="assets/technical-seo-thumbnail.webp"
+                            data-full-res="assets/technical-seo-certificate.webp" alt="Technical SEO Certification"
+                            class="cert-image">
+                        <h5 class="cert-title">Technical SEO</h5>
+                    </div>
+                    <div class="certification-card">
+                        <img src="assets/seo-and-ai-thumbnail.webp" data-full-res="assets/seo-and-ai-certificate.webp"
+                            alt="SEO and AI Certification" class="cert-image">
+                        <h5 class="cert-title">SEO and AI</h5>
+                    </div>
+
+                    <!-- Google Related -->
+                    <div class="certification-card">
+                        <img src="assets/google-analytics-thumbnail.webp"
+                            data-full-res="assets/google-analytics-certificate.webp"
+                            alt="Google Analytics Certification" class="cert-image">
+                        <h5 class="cert-title">Google Analytics</h5>
+                    </div>
+                    <div class="certification-card">
+                        <img src="assets/analytics-by-google-thumbnail.webp"
+                            data-full-res="assets/analytics-by-google-certification.webp"
+                            alt="Analytics by Google Certification" class="cert-image">
+                        <h5 class="cert-title">Analytics by Google</h5>
+                    </div>
+                    <div class="certification-card">
+                        <img src="assets/google-ads-thumbnail.webp" data-full-res="assets/google-ads-certificate.webp"
+                            alt="Google Ads Certification" class="cert-image">
+                        <h5 class="cert-title">Google Ads</h5>
+                    </div>
+
+                    <!-- Email & Copywriting -->
+                    <div class="certification-card">
+                        <img src="assets/email-marketing-thumbnail.webp" data-full-res="assets/email-certificate.webp"
+                            alt="Email Marketing Certification" class="cert-image">
+                        <h5 class="cert-title">Email Marketing</h5>
+                    </div>
+                    <div class="certification-card">
+                        <img src="assets/copywriting-thumbnail.webp" data-full-res="assets/copywriting-certificate.webp"
+                            alt="Copywriting Certification" class="cert-image">
+                        <h5 class="cert-title">Copywriting</h5>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="certification-card">
+                        <img src="assets/content-marketing-thumbnail.webp"
+                            data-full-res="assets/content-marketing-certificate.webp"
+                            alt="Content Marketing Certification" class="cert-image">
+                        <h5 class="cert-title">Content Marketing</h5>
+                    </div>
+                    <div class="certification-card">
+                        <img src="assets/content-management-thumbnail.webp"
+                            data-full-res="assets/content-management-certificate.webp"
+                            alt="Content Management Certification" class="cert-image">
+                        <h5 class="cert-title">Content Management</h5>
+                    </div>
+
+                    <!-- Basics / Other -->
+                    <div class="certification-card">
+                        <img src="assets/marketing-basics-thumbnail.webp"
+                            data-full-res="assets/marketing-basics-certificate.webp"
+                            alt="Marketing Basics Certification" class="cert-image">
+                        <h5 class="cert-title">Marketing Basics</h5>
+                    </div>
+                    <div class="certification-card">
+                        <img src="assets/ai-basics-thumbnail.webp" data-full-res="assets/ai-certificate.webp"
+                            alt="AI Basics Certification" class="cert-image">
+                        <h5 class="cert-title">AI Basics</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="process" class="section">
+            <div class="container">
+                <!-- Onboarding Process -->
+                <div class="process-group mb-5">
+                    <div class="section-header">
+                        <h3>My Onboarding Process</h3>
+                        <p>Here's my simple 5-step onboarding process:</p>
+                    </div>
+                    <div class="journey-container">
+                        <div class="journey-path"></div>
+
+                        <!-- Step 1 -->
+                        <div class="journey-step">
+                            <div class="step-marker">01</div>
+                            <div class="step-content">
+                                <h4>THE REVEAL</h4>
+                                <p>Uncover money leaks and get total growth clarity.</p>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="journey-step">
+                            <div class="step-marker">02</div>
+                            <div class="step-content">
+                                <h4>THE BLUEPRINT</h4>
+                                <p>A proven SEO roadmap to outrank your competition.</p>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="journey-step">
+                            <div class="step-marker">03</div>
+                            <div class="step-content">
+                                <h4>THE WIN-WIN</h4>
+                                <p>A risk-free, high-ROI offer tied to results.</p>
+                            </div>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div class="journey-step">
+                            <div class="step-marker">04</div>
+                            <div class="step-content">
+                                <h4>THE TRANSFORMATION</h4>
+                                <p>Get a fast, SEO-powered 24/7 sales machine.</p>
+                            </div>
+                        </div>
+
+                        <!-- Step 5 -->
+                        <div class="journey-step">
+                            <div class="step-marker">05</div>
+                            <div class="step-content">
+                                <h4>THE PAYOFF</h4>
+                                <p>Attract quality leads and scale with total authority.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Transition Text -->
+                <div class="process-transition">
+                    <h3>But this is just the beginning...</h3>
+                    <p>The real work is about to begin. Here is exactly how I bring your vision to life:</p>
+                    <div class="transition-arrow"><i class="fas fa-chevron-down"></i></div>
+                </div>
+
+                <!-- Working Process -->
+                <div class="process-group">
+                    <div class="section-header">
+                        <h3>My Working Process</h3>
+                    </div>
+                    <div class="timeline-container">
+                        <!-- Step 1 -->
+                        <div class="timeline-item">
+                            <div class="timeline-icon">
+                                <i class="fas fa-clipboard-list"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h4>QUESTIONNAIRE</h4>
+                                <p>I capture your business DNA so every technical choice I make <b>supports your unique
+                                        brand goals</b>.</p>
+                            </div>
+                        </div>
+                        <!-- Step 2 -->
+                        <div class="timeline-item">
+                            <div class="timeline-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h4>COMPETITOR ANALYSIS</h4>
+                                <p>I decode your rivals' digital strategies so you can find the <b>market gaps where
+                                        your business wins</b>.</p>
+                            </div>
+                        </div>
+                        <!-- Step 3 -->
+                        <div class="timeline-item">
+                            <div class="timeline-icon">
+                                <i class="fas fa-sitemap"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h4>TECHNICAL OUTLINE</h4>
+                                <p>I architect a logical site hierarchy so your visitors are <b>guided effortlessly
+                                        toward a sale</b>.</p>
+                            </div>
+                        </div>
+                        <!-- Step 4 -->
+                        <div class="timeline-item">
+                            <div class="timeline-icon">
+                                <i class="fas fa-compass"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h4>CONTENT STRATEGY</h4>
+                                <p>I plan a data-driven content map so you can <b>build long-term authority and organic
+                                        growth</b>.</p>
+                            </div>
+                        </div>
+                        <!-- Step 5 -->
+                        <div class="timeline-item">
+                            <div class="timeline-icon">
+                                <i class="fas fa-pencil-ruler"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h4>WIREFRAMING</h4>
+                                <p>I merge code, visuals, and strategy so you receive a <b>high-performance engine built
+                                        for your success</b>.</p>
+                            </div>
+                        </div>
+                        <!-- Step 6 -->
+                        <div class="timeline-item">
+                            <div class="timeline-icon">
+                                <i class="fas fa-clipboard-check"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h4>QA</h4>
+                                <p>I perform a final technical audit so you launch a site that is <b>mobile-perfect and
+                                        ready for results</b>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="free-audit" class="section cta-section">
+            <div class="container">
+                <div class="cta-box">
+                    <div class="section-header">
+                        <h3>Not sure yet?</h3>
+                        <p class="highlight">Let me show you what I can do for you.</p>
+                    </div>
+                    <p class="cta-text">
+                        I provide a <b>free homepage audit</b> to pinpoint every issue and suggest exactly how to
+                        resolve them. I'll also share a custom forecast demonstrating the <b>positive impact</b> these
+                        improvements will deliver.
+                    </p>
+                    <a href="https://www.upwork.com/freelancers/~015316ba259b89636e" target="_blank"
+                        class="btn primary-btn large">Send Me Your Website</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Packages -->
+        <section id="packages" class="section new-packages-section">
+            <div class="container">
+                <div class="section-header">
+                    <h3>My Service Packages</h3>
+                    <p class="highlight">Choose the perfect solution to elevate your online presence.</p>
+                    <div class="line"></div>
+                </div>
+
+                <div class="new-packages-grid">
+                    <!-- Package 1 -->
+                    <article class="new-package-card">
+                        <div class="card-glow"></div>
+                        <div class="package-header">
+                            <i class="fas fa-wrench package-icon"></i>
+                            <h4>Website Fix & Google Boost</h4>
+                            <p class="best-for">Best for: Fixing an existing site that isn't showing up on Google or
+                                feels slow.</p>
+                        </div>
+                        <div class="package-body">
+                            <ul class="package-features">
+                                <li>
+                                    <span class="feature-icon"><i class="fas fa-check"></i></span>
+                                    <div class="feature-text">
+                                        <strong>Complete Health Check</strong>
+                                        <p>I find and fix the "invisible" errors stopping your site from ranking.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="feature-icon"><i class="fas fa-check"></i></span>
+                                    <div class="feature-text">
+                                        <strong>Google-Friendly Updates</strong>
+                                        <p>I rewrite your site’s behind-the-scenes info so Google knows exactly what you
+                                            sell.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="feature-icon"><i class="fas fa-check"></i></span>
+                                    <div class="feature-text">
+                                        <strong>Speed Boost</strong>
+                                        <p>I make your pages load faster so customers don’t leave out of frustration.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="feature-icon"><i class="fas fa-check"></i></span>
+                                    <div class="feature-text">
+                                        <strong>Visitor Tracking</strong>
+                                        <p>I set up tools so you can see exactly how many people visit and what they do.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="package-footer">
+                            <a href="#contact" class="btn primary-btn full-width">Get Started</a>
+                        </div>
+                    </article>
+
+                    <!-- Package 2 -->
+                    <article class="new-package-card featured-card">
+                        <div class="card-glow"></div>
+                        <div class="package-header">
+                            <div class="popular-tag">Most Popular</div>
+                            <i class="fas fa-laptop-code package-icon"></i>
+                            <h4>All-in-One Professional Website</h4>
+                            <p class="best-for">Best for: A brand-new, modern site built to attract customers from day
+                                one.</p>
+                        </div>
+                        <div class="package-body">
+                            <ul class="package-features">
+                                <li>
+                                    <span class="feature-icon"><i class="fas fa-check"></i></span>
+                                    <div class="feature-text">
+                                        <strong>Custom Modern Design</strong>
+                                        <p>A beautiful site that looks perfect on both iPhones and computers.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="feature-icon"><i class="fas fa-check"></i></span>
+                                    <div class="feature-text">
+                                        <strong>Google-Ready Layout</strong>
+                                        <p>I build the site structure specifically to help you show up in search
+                                            results.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="feature-icon"><i class="fas fa-check"></i></span>
+                                    <div class="feature-text">
+                                        <strong>Smart Search Research</strong>
+                                        <p>I find the exact words your customers use and build your site around them.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="feature-icon"><i class="fas fa-check"></i></span>
+                                    <div class="feature-text">
+                                        <strong>Smooth & Reliable Coding</strong>
+                                        <p>A high-quality site that doesn’t crash and stays easy to use.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="feature-icon"><i class="fas fa-check"></i></span>
+                                    <div class="feature-text">
+                                        <strong>Ready-to-Work</strong>
+                                        <p>You get a finished, live website ready to take orders or calls.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="package-footer">
+                            <a href="#contact" class="btn primary-btn full-width">Get Started</a>
+                        </div>
+                    </article>
+
+                    <!-- Package 3 -->
+                    <article class="new-package-card">
+                        <div class="card-glow"></div>
+                        <div class="package-header">
+                            <i class="fas fa-rocket package-icon"></i>
+                            <h4>High-End Business Machine</h4>
+                            <p class="best-for">Best for: Large online stores or businesses that want to dominate their
+                                competition.</p>
+                        </div>
+                        <div class="package-body">
+                            <ul class="package-features">
+                                <li>
+                                    <span class="feature-icon"><i class="fas fa-check"></i></span>
+                                    <div class="feature-text">
+                                        <strong>Custom Online Store</strong>
+                                        <p>A full-scale shop or complex system built specifically for your business
+                                            needs.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="feature-icon"><i class="fas fa-check"></i></span>
+                                    <div class="feature-text">
+                                        <strong>Premium Customer Experience</strong>
+                                        <p>A high-end look that makes your brand look like a market leader.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="feature-icon"><i class="fas fa-check"></i></span>
+                                    <div class="feature-text">
+                                        <strong>Advanced Search Strategy</strong>
+                                        <p>Special coding that helps your products or services stand out in Google
+                                            "boxes" and snippets.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="feature-icon"><i class="fas fa-check"></i></span>
+                                    <div class="feature-text">
+                                        <strong>Market Domination Plan</strong>
+                                        <p>A strategy to help you beat your competitors and grow long-term.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="feature-icon"><i class="fas fa-check"></i></span>
+                                    <div class="feature-text">
+                                        <strong>Full Control Training</strong>
+                                        <p>I personally teach you how to manage your new site so you don't have to rely
+                                            on a developer.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="package-footer">
+                            <a href="#contact" class="btn primary-btn full-width">Get Started</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews -->
+        <section id="reviews" class="section reviews-section">
+            <div class="container">
+                <div class="section-header">
+                    <h3>Client Reviews</h3>
+                    <p class="highlight">See what others are saying.</p>
+                </div>
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">"Mario transformed my website into a lead machine. The SEO results were
+                            immediate!"</p>
+                        <div class="review-author">
+                            <h5>John D.</h5>
+                            <span>CEO</span>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">"The attention to detail is unmatched. The 'All-in-One' package gave us
+                            exactly the interactiveness we needed."</p>
+                        <div class="review-author">
+                            <h5>Sarah M.</h5>
+                            <span>Founder</span>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">"Professional, fast, and incredibly talented. Mario is the partner you
+                            need for your next project."</p>
+                        <div class="review-author">
+                            <h5>David K.</h5>
+                            <span>Director</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <div class="contact-box">
+                    <h3>Let's Work Together</h3>
+                    <p>Have a project in mind? Let's turn your idea into reality.</p>
+                    <a href="https://www.upwork.com/freelancers/~015316ba259b89636e" target="_blank"
+                        class="btn primary-btn large">Get In Touch</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Mario Stoyanov. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox for Certifications -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
